@@ -1,0 +1,18 @@
+#include <iostream>
+#include <bitset>
+using namespace std;
+int main(){
+	int a,b;
+	cout <<"podaj a: "<<endl;
+	cin >> a;
+	cout <<"podaj b :"<<endl;
+	cin >> b;
+
+	cout<<""<<endl;
+	cout << bitset<8>(a||b).to_string()<<endl;
+	cout << bitset<8>(a&&b).to_string()<<endl;
+	cout << bitset<8>(a^b).to_string()<<endl;
+	cout << bitset<8>(~a).to_string()<<endl;
+	cout << bitset<8>(~b).to_string()<<endl;
+	
+}
